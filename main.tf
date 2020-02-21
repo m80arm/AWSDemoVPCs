@@ -129,7 +129,7 @@ resource "aws_route_table_association" "vpc1_frankfurt_subnet1_routetable" {
 
 resource "aws_subnet" "vpc1_frankfurt_subnet2" {
   provider                = aws.frankfurt
-  vpc_id                  = aws_vpc.vpc1_london.id
+  vpc_id                  = aws_vpc.vpc1_frankfurt.id
   cidr_block              = var.my_frankfurt_subnets["vpc1_frankfurt_subnet2"]
   availability_zone       = "eu-central-1b"
   map_public_ip_on_launch = true
@@ -148,7 +148,7 @@ resource "aws_subnet" "vpc1_frankfurt_subnet3" {
   provider                = aws.frankfurt
   vpc_id                  = aws_vpc.vpc1_frankfurt.id
   cidr_block              = var.my_frankfurt_subnets["vpc1_frankfurt_subnet3"]
-  availability_zone       = "eu-central-2c"
+  availability_zone       = "eu-central-1c"
   map_public_ip_on_launch = true
   tags = {
     Name = "MA-VPC-01-SN-03"
