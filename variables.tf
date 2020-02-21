@@ -27,18 +27,18 @@ variable "aws_key_pairs" {
 }
 variable "my_london_subnets" {
   default = {
-    vpc1         = "10.101.0.0/16"
-    vpc1_subnet1 = "10.101.1.0/24"
-    vpc1_subnet2 = "10.101.2.0/24"
-    vpc1_subnet3 = "10.101.3.0/24"
+    vpc1_london         = "10.101.0.0/16"
+    vpc1_london_subnet1 = "10.101.1.0/24"
+    vpc1_london_subnet2 = "10.101.2.0/24"
+    vpc1_london_subnet3 = "10.101.3.0/24"
   }
 }
 variable "my_frankfurt_subnets" {
   default = {
-    vpc1         = "10.101.0.0/16"
-    vpc1_subnet1 = "10.101.1.0/24"
-    vpc1_subnet2 = "10.101.2.0/24"
-    vpc1_subnet3 = "10.101.3.0/24"
+    vpc1_frankfurt         = "10.101.0.0/16"
+    vpc1_frankfurt_subnet1 = "10.101.1.0/24"
+    vpc1_frankfurt_subnet2 = "10.101.2.0/24"
+    vpc1_frankfurt_subnet3 = "10.101.3.0/24"
   }
 }
   
